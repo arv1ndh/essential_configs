@@ -1,6 +1,7 @@
 filetype plugin indent on
 set hlsearch
-set visualbell
+"set visualbell
+syntax on
 set showcmd
 set incsearch
 set number
@@ -20,8 +21,8 @@ map ,H <C-w>H
 map ,J <C-w>J
 map ,K <C-w>K
 map ,L <C-w>L
-source ~/arvindh/cscope_maps.vim
-colorscheme pablo
+"source ~/arvindh/cscope_maps.vim
+colorscheme elflord
 set laststatus=2
 set t_Co=256
 
@@ -30,8 +31,13 @@ if has("autocmd")
 endif
 nmap <leader>vrc :vsp $MYVIMRC<CR>
 
-execute pathogen#infect()
-execute pathogen#helptags()
+"POWERLINE
+set noshowmode
+set rtp+=/usr/lib/python3.7/site-packages/powerline/bindings/vim
+
+
+"execute pathogen#infect()
+"execute pathogen#helptags()
 
 "Python IDE SPECIFIC
 "set textwidth=79  " lines longer than 79 columns will be broken
