@@ -21,7 +21,7 @@ map ,H <C-w>H
 map ,J <C-w>J
 map ,K <C-w>K
 map ,L <C-w>L
-"source ~/arvindh/cscope_maps.vim
+source ~/essential_configs/cscope_maps.vim
 colorscheme elflord
 set laststatus=2
 set t_Co=256
